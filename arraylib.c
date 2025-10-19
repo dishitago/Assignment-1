@@ -1,38 +1,35 @@
-#include <stdio.h>
 #include "arraylib.h"
-
-// #Cp — Array helper functions
+#include <stdio.h>
 
 int findmaxindex(int arr[], int size) {
+    if (size <= 0) return -1; // handle empty array
     int maxindex = 0;
     for (int i = 1; i < size; i++) {
-        if (arr[i] > arr[maxindex])
+        if (arr[i] > arr[maxindex]) {
             maxindex = i;
+        }
     }
     return maxindex;
 }
 
 int findminindex(int arr[], int size) {
+    if (size <= 0) return -1;
     int minindex = 0;
     for (int i = 1; i < size; i++) {
-        if (arr[i] < arr[minindex])
+        if (arr[i] < arr[minindex]) {
             minindex = i;
+        }
     }
     return minindex;
 }
 
-float findaverage(int arr[], int size) {
-    int sum = 0;
-    for (int i = 0; i < size; i++)
+float findaverage (int arr[], int size) {
+    if (size <= 0) return 0.0f;
+    long long sum = 0; 
+    for (int i = 0; i < size; i++) {
         sum += arr[i];
+    }
     return (float)sum / size;
-}
-
-void displayarray(int arr[], int size) {
-    printf("Array: ");
-    for (int i = 0; i < size; i++)
-        printf("%d ", arr[i]);
-    printf("\n");
 }
 
 void reversearray(int arr[], int size) {
@@ -62,3 +59,4 @@ int linearsearch(int arr[], int size, int value) {
     }
     return -1;
 }
+
