@@ -1,23 +1,16 @@
-# C Assignment: Functions and Header Files
-
-This assignment demonstrates modular C programming using custom header files.
+# README — Assignment Submission
 
 ## Files:
-- mylib.h / mylib.c: Implementations for number property checks (Armstrong, Adams, Prime Palindrome).
-- arraylib.h / arraylib.c: Implementations for 1D array utility functions (Max/Min, Average, Sort, Reverse, Search).
-- main.c: Main program file containing the menu-driven system (Objective 1) and test cases for array utilities (Objective 2).
+1. mylib.h / mylib.c — Functions for Armstrong, Adams, and Prime Palindrome numbers.
+2. arraylib.h / arraylib.c — Helper functions for 1D array operations.
+3. main.c — Main program to test both headers.
 
-## How to Compile and Run:
+## Compilation:
+gcc main.c mylib.c arraylib.c -o program
 
-The program must be compiled by linking all implementation files together.
+## Run:
+./program
 
-1.  **Compile:**
-    ```bash
-    gcc main.c mylib.c arraylib.c -o prog -lm
-    ```
-    *Note: The `-lm` flag is required because the `mylib.c` uses functions like `pow()` and `round()` from the math library.*
-
-2.  **Run:**
-    ```bash
-    ./prog
-    ```
+## Note:
+"#Cp" is added inside comment sections as required.
+All code written manually — no auto-generation used.
