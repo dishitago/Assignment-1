@@ -1,8 +1,8 @@
 #ifndef MYLIB_H
 #define MYLIB_H
 
-int isArmstrong(int num);
-int isAdams(int num);
-int isPrimePalindrome(int num);
+int isarmstrong(int num);
+int isadams(int num);
+int isprimepalindrome(int num);
 
 #endif
