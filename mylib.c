@@ -24,7 +24,7 @@ int isarmstrong(int num) { // Check Armstrong no.
     temp = num;
     while (temp != 0) {
         int digit = temp % 10;
-        sum += pow(digit, count);
+        sum += (int)pow(digit, count);
         temp /= 10;
     }
 
