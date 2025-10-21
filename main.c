@@ -27,7 +27,7 @@ int main(void) {
     int a[] = {3, 1, 4, 1, 5};
     int size = 5;
 
-    displayArray(a, size);
+    displayarray(a, size);
     printf("Max at index %d\n", findmaxindex(a, size));
     printf("Min at index %d\n", findminindex(a, size));
     printf("Average = %.2f\n", findaverage(a, size));
